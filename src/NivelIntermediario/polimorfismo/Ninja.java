@@ -1,6 +1,6 @@
 package NivelIntermediario.polimorfismo;
 
-public class Ninja {
+public class Ninja implements EstrategiaDeBatalha{
 
     //TODO: Incluir 2 novos atributos: numeroDeMissoesConcluidas , Rank
     //TODO: Rank: Gennin, Chunnin, Jounnin, Hokage
@@ -31,5 +31,33 @@ public class Ninja {
         System.out.println("Meu nome e: " + nome + " e esse é meu ataque especial");
     }
 
+    // Sobrescrevendo o metodo da interface
+    public void estrategiaDeBatalha() {
+        System.out.println("Meu nome é: " + nome + " Essa é minha estrategia de batalha");
+    }
 
+    // Sobrecarga de metodo - Inteligencia de combate
+    public void inteligenciaDeCombate() {
+        System.out.println("Meu nome e: " + nome + " Essa e minha inteligencia de combate");
+    }
+
+    // Inteligencia de combate
+    public void inteligenciaDeCombate(int qi ) {
+        
+        if (qi > 150){
+            System.out.println("Seu QI é: " + qi + " e voce e um genio");
+        } else if (qi >= 130) {
+            System.out.println("Seu QI é: " + qi + " e voce e um ninja promissor");
+
+        }else {
+            System.out.println("Seu QI é: " + qi + " e voce precisa treinar suas estrategias");
+
+        }
+
+    }
+
+    @Override
+    public String toString() {
+        return "Ninja: " + "nome = " + nome  + ", aldeia = " + aldeia + ", idade = " + idade ;
+    }
 }
