@@ -8,26 +8,35 @@ public class Ninja implements EstrategiaDeBatalha{
     String nome;
     String aldeia;
     int idade;
+    double altura;
     int numeroDeMissoesConcluidas;
     NivelNinja rank;
 
-    public Ninja(String nome, String aldeia, int idade) {
+    public Ninja() {
+    }
+
+    public Ninja(String nome, String aldeia, int idade, double altura) {
         this.nome = nome;
         this.aldeia = aldeia;
         this.idade = idade;
+        this.altura = altura;
     }
 
     //TODO: Sobrecarga do Construtor chamando os novos atributos
     // Sobrecarga de metodos voce nao precisa redeclarar o construtor so os novos atributos
-    public Ninja(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, NivelNinja rank) {
-        this(nome, aldeia, idade);
+    public Ninja(String nome, String aldeia, int idade, double altura, int numeroDeMissoesConcluidas, NivelNinja rank) {
+        this(nome, aldeia, idade, altura);
         this.numeroDeMissoesConcluidas = numeroDeMissoesConcluidas;
-        this.rank = rank;
+        NivelNinja NivelNinja = rank;
+    }
+
+    // TOD NINJA VAI FAZER OBRIGATORIAMENTE
+    final void tacarKunai(){
+        System.out.println("Eu sou um metodo da classe mae");
     }
 
     // Metodo geral
     public void HabilidadeEspecial() {
-
         System.out.println("Meu nome e: " + nome + " e esse é meu ataque especial");
     }
 
@@ -56,8 +65,4 @@ public class Ninja implements EstrategiaDeBatalha{
 
     }
 
-    @Override
-    public String toString() {
-        return "Ninja: " + "nome = " + nome  + ", aldeia = " + aldeia + ", idade = " + idade ;
-    }
 }

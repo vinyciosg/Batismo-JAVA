@@ -1,19 +1,21 @@
 package NivelIntermediario.polimorfismo;
 
-public class Uchia extends Ninja{
+public class Uchia extends Ninja implements AtivarSharingan{
 
-    public Uchia(String nome, String aldeia, int idade){
-        super(nome, aldeia, idade);
+    public Uchia() {
     }
 
-    public Uchia(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, NivelNinja rank){
-        super(nome, aldeia, idade, numeroDeMissoesConcluidas, rank);
+    public Uchia(String nome, String aldeia, int idade, double altura){
+        super(nome, aldeia, idade, altura);
+    }
+
+    public Uchia(String nome, String aldeia, int idade, double altura, int numeroDeMissoesConcluidas, NivelNinja rank){
+        super(nome, aldeia, idade, altura, numeroDeMissoesConcluidas, rank);
     }
 
     @Override
     public void HabilidadeEspecial() {
-
-        System.out.println("Meu nome e: " + nome + " e esse é meu ataque Uchia. Eu ja completei: " + numeroDeMissoesConcluidas + " Missoes e meu nivel é: " + NivelNinja.CHUNNIN);
+        System.out.println("Meu nome e: " + nome + " e esse é meu ataque Uchia. Eu ja completei: " + numeroDeMissoesConcluidas + " Missoes e meu nivel é: ");
     }
 
     // Sobrecarga de metodo - Inteligencia de combate
@@ -30,12 +32,16 @@ public class Uchia extends Ninja{
             System.out.println("Seu QI é: " + qi + " e voce e um genio");
         } else if (qi >= 130) {
             System.out.println("Seu QI é: " + qi + " e voce e um ninja promissor");
-
         }else {
             System.out.println("Seu QI é: " + qi + " e voce precisa treinar suas estrategias");
-
         }
-
+    }
+    /*
+    * Metodo:
+    * Implementado da interface AtivarSharingan
+    * */
+    public void ativarSharingan(){
+        System.out.println("Meu nome é " + nome + " E eu ativei meu Sharingan");
     }
 
     @Override
@@ -45,7 +51,6 @@ public class Uchia extends Ninja{
                 ", aldeia='" + aldeia + '\'' +
                 ", idade=" + idade +
                 ", numeroDeMissoesConcluidas=" + numeroDeMissoesConcluidas +
-                ", rank=" + rank +
                 '}';
     }
 }

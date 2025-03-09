@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         ContaCorrente contaCorrente = new ContaCorrente(100, TipoConta.CORRENTE);
-        ContaPoupanca contaPoupanca = new ContaPoupanca(150, TipoConta.POUPANCA);
+        ContaPoupanca contaPoupanca = new ContaPoupanca(100, TipoConta.POUPANCA);
 
         contaCorrente.depositar(100);
         contaPoupanca.depositar(200);

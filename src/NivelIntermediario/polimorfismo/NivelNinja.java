@@ -1,8 +1,10 @@
 package NivelIntermediario.polimorfismo;
 
 public enum NivelNinja {
+
+    JONNIN,
     GENNIN,
     CHUNNIN,
-    JOUNNIN,
-    HOKAGE
+    ANBU;
+
 }

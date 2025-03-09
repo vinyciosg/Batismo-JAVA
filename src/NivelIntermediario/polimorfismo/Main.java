@@ -3,30 +3,29 @@ package NivelIntermediario.polimorfismo;
 public class Main {
     public static void main(String[] args) {
 
-       /* Uzumaki naruto = new Uzumaki("Naruto", "Aldeia da folha", 15, 150, NivelNinja.JOUNNIN);
+        System.out.println("---------------- NARUTO ----------------");
+
+        Uzumaki naruto = new Uzumaki("Naruto", "Aldeia da folha", 15, 1.50, 20, NivelNinja.GENNIN, NivelIntermediario.polimorfismo.Biju.SHUKAKU);
+        System.out.println(naruto.bijus);
         naruto.HabilidadeEspecial();
+        naruto.estrategiaDeBatalha();
+        naruto.inteligenciaDeCombate(120);
 
-        Uchia sasuke = new Uchia("sasuke", "Aldeia da folha", 18);
+        System.out.println("---------------- SASUKE ----------------");
+
+        Uchia sasuke = new Uchia("Sasuke", "Aldeia da folha", 20, 1.40, 150, NivelNinja.JONNIN);
         sasuke.HabilidadeEspecial();
+        sasuke.ativarSharingan();
 
-        Uchia madara = new Uchia("Madara", "Aldeia da folja", 29, 778,NivelNinja.HOKAGE);
+        System.out.println("---------------- MADARA ----------------");
+
+        Uchia madara = new Uchia("Madara", "Aldeia da folha", 35, 1.60, 25, NivelNinja.ANBU);
         madara.HabilidadeEspecial();
         madara.estrategiaDeBatalha();
-        // Metodo comum
         madara.inteligenciaDeCombate();
-        // Metodo sobrecarregado
-        madara.inteligenciaDeCombate(200 );*/
+        madara.inteligenciaDeCombate(200 );
 
-        System.out.println("--------------- Naruto Uzumaki ---------------");
-        Uzumaki naruto = new Uzumaki("Naruto", "Aldeia da folha", 16);
-        System.out.println(naruto);
-
-        System.out.println();
-
-        System.out.println("--------------- Sasuke Uchia ---------------");
-        Uchia sasuke = new Uchia("Sasuke", "Aldeia da folha", 18);
-
-
+        System.out.println("--------------------------------");
 
     }
 }
