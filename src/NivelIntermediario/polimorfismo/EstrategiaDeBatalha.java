@@ -8,4 +8,12 @@ public interface EstrategiaDeBatalha {
 
     void inteligenciaDeCombate(int qi);
 
+
+    /*
+    *
+    * asdlksamdlaskmdlsakndlaskdnaslkdnasdlk
+    *
+    * */
+
+
 }
