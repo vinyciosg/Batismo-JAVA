@@ -10,7 +10,7 @@ public class Main {
         contaPoupanca.depositar(200);
 
         contaCorrente.transferencia(40, contaPoupanca);
-        contaPoupanca.transferencia(60,contaCorrente);
+        contaPoupanca.transferencia(60, contaCorrente);
 
         contaCorrente.consultarSaldo();
         contaPoupanca.consultarSaldo();
