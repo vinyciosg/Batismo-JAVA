@@ -17,11 +17,11 @@ public class Desenvolvedor extends Funcionario{
         System.out.println("Nome: " + this.nome);
         System.out.println("Salario: " + this.salario);
         System.out.println("Linguagem: " + this.linguagem);
-
+        System.out.println("Trabalho: " + this.escala);
     }
 
-    public Desenvolvedor(String nome, double salario, String linguagem) {
-        super(nome, salario);
+    public Desenvolvedor(String nome, double salario, DiasDaSemana escala, String linguagem) {
+        super(nome, salario, escala);
         this.linguagem = linguagem;
     }
 

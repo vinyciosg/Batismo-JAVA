@@ -4,6 +4,7 @@ public class Funcionario {
 
     String nome;
     double salario;
+    DiasDaSemana escala;
 
     public void calcularBonus(){
         int valor;
@@ -15,12 +16,14 @@ public class Funcionario {
     public void exiirInfo(){
         System.out.println("Nome: " + this.nome);
         System.out.println("Salario: " + this.salario);
+        System.out.println("Trabalho: " + this.escala);
     }
 
     public Funcionario() {
     }
 
-    public Funcionario(String nome, double salario) {
+    public Funcionario(String nome, double salario, DiasDaSemana escala) {
+        this.escala = escala;
         this.nome = nome;
         this.salario = salario;
     }
