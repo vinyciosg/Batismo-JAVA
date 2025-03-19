@@ -17,11 +17,11 @@ public class Gerente extends Funcionario{
         System.out.println("Nome: " + this.nome);
         System.out.println("Salario: " + this.salario);
         System.out.println("Departamento: " + this.departamento);
-
+        System.out.println("Trabalho: " + this.escala);
     }
 
-    public Gerente(String nome, double salario, String departamento) {
-        super(nome, salario);
+    public Gerente(String nome, double salario, DiasDaSemana escala, String departamento) {
+        super(nome, salario, escala);
         this.departamento = departamento;
     }
 
