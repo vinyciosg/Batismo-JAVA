@@ -13,6 +13,7 @@ public class Main {
 
         // List
         // Listas sao dinamicas e tamanho almenta e diminui quando precisa
+
         List<String> ninjasList = new ArrayList<>();
 
         // Stack
@@ -31,5 +32,7 @@ public class Main {
         System.out.println("Tamanho da stack: " + ninjasStack.size() + " elementos");
 
         System.out.println("Minha Stack atual: " + ninjasStack);
+
+
     }
 }
