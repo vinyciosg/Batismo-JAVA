@@ -13,6 +13,7 @@ public class SwitchCases {
         // pedir para o usuario
         Scanner scanner = new Scanner(System.in);
 
+
         // Mostrar opcao para o usuario
         System.out.println("Escolha um personagem: ");
         System.out.println(" 1 Naruto Uzomaki");
