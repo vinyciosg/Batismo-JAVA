@@ -1,13 +1,11 @@
 package Desafios.Desafio8;
 
-import java.util.LinkedList;
+public class Ninjass {
+    private String nome;
+    private int idade;
+    private String vila;
 
-public class Ninja {
-    String nome;
-    int idade;
-    String vila;
-
-    public Ninja(String nome, int idade, String vila) {
+    public Ninjass(String nome, int idade, String vila) {
         this.nome = nome;
         this.idade = idade;
         this.vila = vila;
@@ -39,6 +37,6 @@ public class Ninja {
 
     @Override
     public String toString() {
-        return " Nome = " + nome + "| Idade = " + idade + "| Aldeia = " + vila + "\n";
+        return "Nome = " + nome  + ", Idade = " + idade + ", vila = " + vila + "." ;
     }
 }
