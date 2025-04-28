@@ -1,7 +1,5 @@
 package Desafios.Desafio8;
-
 import Desafios.Desafio8teste.Ninjas1;
-
 import java.util.LinkedList;
 import java.util.Scanner;
 
