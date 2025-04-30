@@ -1,9 +1,5 @@
-package NivelIntermediario.HashSet;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+package NivelIntermediario.Treeset.X.hashset;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,14 +9,15 @@ public class Main {
         ninjas.add("Sasuke");
         ninjas.add("Sakura");
         ninjas.add("Naruto");
-        System.out.println(ninjas);
+        ninjas.add("Danzo");
+        ninjas.add("Boruto");
 
-
-        Set<String> NinjasSet = new HashSet<>();
+        Set<String> NinjasSet = new TreeSet<>();
 
         NinjasSet.addAll(ninjas);
         System.out.println(NinjasSet);
 
-        Set<String> aldeias = new HashSet<>();
+
+
     }
 }
